@@ -83,7 +83,7 @@ Switched to a new branch 'feature/add_reply'
 
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`
 
-+
+- есть
 
 15. Убедитесь, что нет собранного артефакта в сборке по ветке `master`
 
