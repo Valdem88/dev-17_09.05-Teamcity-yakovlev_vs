@@ -60,7 +60,7 @@ Switched to a new branch 'feature/add_reply'
 
 ```bash
     public String sayHunter() {
-        return "Gretel, the famous witch hunter.";
+        return "When the first hunter succumbed to the curse of blood, nightmare filled the streets of Kirova.";
     }
 ```
 
@@ -68,9 +68,9 @@ Switched to a new branch 'feature/add_reply'
 
 ```bash
 	@Test
-	public void netologySaysHunter() {
-		assertThat(welcomer.sayStatus(), containsString("status"));
-	}
+    public void netologySaysHunter() {
+        assertThat(welcomer.sayHunter(), containsString("hunter"));
+    }
 ```
 
 12. Сделайте push всех изменений в новую ветку в репозиторий
@@ -82,10 +82,27 @@ Switched to a new branch 'feature/add_reply'
 ![](pic/run8.jpg)
 
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`
+
++
+
 15. Убедитесь, что нет собранного артефакта в сборке по ветке `master`
+
+![](pic/run9.jpg)
+
 16. Настройте конфигурацию так, чтобы она собирала `.jar` в артефакты сборки
+
+![](pic/run10.jpg)
+
 17. Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны
+
+![](pic/run11.jpg)
+
 18. Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity
+
++
+
 19. В ответ предоставьте ссылку на репозиторий
+
+[Репозиторий example-teamcity](https://github.com/Valdem88/example-teamcity)
 
 ---
